@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\lectures.css"/>
+	<title>CSCB20 - Introduction to Database and Web Application</title>
+</head>
+<body>
+    <div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <div class="title"><center><h1>Lectures</h1></center></div>
+    <div class = "welcome"> Welcome {{name}}
+        	<a href="http://127.0.0.1:5000/logout">Logout</a>
+	</div>
+  </div>
+</div>
+<div class = "body">
+	<div class="table">
+		<h2>Lecture Schedule</h2>
+		Please print and bring these notes/worksheets to class.
+		<br>
+		<br>
+		<div class="row">
+			<div class="week">
+				week
+			</div>
+			<div class="Topic">
+				Topic
+			</div>
+			<div class="Material">
+				Lecture Material
+			</div>
+			<div class="InClass">
+				In Class
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				1
+			</div>
+			<div class="Topic">
+				Introduction, Databases background
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w1.pdf">Power Point</a>
+				<br>
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w1_handout.pdf">Power Point Handout</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				3
+			</div>
+			<div class="Topic">
+				Schema Diagrams, Relational Algebra
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w2.pdf">Power Point</a>
+				<br>
+				<a href="static/w2sheet.pdf">Worksheet</a>
+				<br>
+				<a href="static/w2sol.pdf">Worksheet Solutions</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				4
+			</div>
+			<div class="Topic">
+				SQL and MySQL
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w3.pdf">Power Point PDF</a>
+				<br>
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w3_ppt_printable.pdf">Power Point Printable PDF</a>
+				<br>
+				<a href="static/w3sheet.pdf">MySQL Worksheet</a>
+			</div>
+			<div class="InClass">
+				<a href="static/w4in.rtf">In Class MySQL</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				5
+			</div>
+			<div class="Topic">
+				MySQL Queries, Creating and Editing Tables
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w4.pdf">Power Point</a>
+				<br>
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w4_printable.pdf">Printable Power Point</a>
+				<br>
+				<a href="static/w5sheet.pdf">More MySQL Worksheet </a>
+			</div>
+			<div class="InClass">
+				<a href="static/w5in.rtf">In Class MySQL</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				6
+			</div>
+			<div class="Topic">
+				MySQL Outer Joins, Views, NULL, string functions, HTML
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w5.pdf">Power Point</a>
+				<br>
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/html.pdf">HTML Power Point</a>
+				<br>
+				<a href="static/w6sheet.pdf">MySQL Views Worksheet </a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				7
+			</div>
+			<div class="Topic">
+				HTML, CSS
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w7.pdf">CSS Power Point</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				8
+			</div>
+			<div class="Topic">
+				PHP
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w8_php.pdf">Power Point</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				9
+			</div>
+			<div class="Topic">
+				PHP and SQL
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/~bretscher/b20/lectures/w9_php_query.pdf">Power Point</a>
+			</div>
+			<div class="InClass">
+				Empty starter file: 
+				<a href="http://mathlab.utsc.utoronto.ca/courses/cscb20w17/bretsche/inclass/php_query.php">query.php</a>
+				<br>
+				To look at the txt for this file, download this 
+				<a href="http://mathlab.utsc.utoronto.ca/courses/cscb20w17/bretsche/inclass/php_query.txt">php_query.txt</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				10
+			</div>
+			<div class="Topic">
+				JavaScript and jQuery
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/bretscher/b20/lectures/jquery.pdf">jQuery Power Point</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				11
+			</div>
+			<div class="Topic">
+				jQuery, AJAX, JSON
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/bretscher/b20/lectures/week11_forms.pdf">Power Point</a>
+				<br>
+				<a href="http://www.utsc.utoronto.ca/bretscher/b20/lectures/forms_printable.pdf">printable Power Point</a>
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+		<div class="row">
+			<div class="week">
+				12
+			</div>
+			<div class="Topic">
+				Last Year's final
+			</div>
+			<div class="Material">
+				<a href="http://www.utsc.utoronto.ca/bretscher/b20/tests/final_f16.pdf">W16 Final</a>
+				 Note that some questions have code missing because portions resemble your A3
+			</div>
+			<div class="InClass">
+			</div>
+		</div>
+</div>
+</div>
+
+<div class="footage">
+	<div class="faculty">
+		<a href="https://www.utsc.utoronto.ca/cms/faculty">UTSC CS faculty</a>
+	</div>
+	<div class="author">
+		Design by: Yiming Zheng, Yushu Zou
+	</div>
+</div>
+</body>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</html>

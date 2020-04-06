@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback page for instructor</title>
+	<link rel="stylesheet" type="text/css" href="/static/feedback.css">
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<script> 
+	function openNav() {
+ 	 document.getElementById("mySidebar").style.width = "250px";
+  	document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<body>
+<div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+	</div>
+{% if position == 'instructor' %}
+	<div id="main">
+ 	 <button class="openbtn" onclick="openNav()">☰ Menu</button>
+		<div class="title"><center><h1>Feedback for instructor</h1></center></div>
+		<div class = "welcome"> Welcome {{name}}
+        	<a href="http://127.0.0.1:5000/logout">Logout</a></div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Teaching Style</th>
+		<th>Improvement for teaching</th>
+		<th>Labs</th>
+		<th>Improvement for labs</th>
+	</tr>
+	{% for feedback in feedbacks %}
+	<tr>
+		<td>{{feedback['name']}}</td>
+		<td>{{feedback['f1']}}</td>
+		<td>{{feedback['f2']}}</td>
+		<td>{{feedback['f3']}}</td>
+		<td>{{feedback['f4']}}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% else %}
+	<div id="main">
+ 	 <button class="openbtn" onclick="openNav()">☰ Menu</button>
+		<div class="title"><center><h1>Feedback for Student</h1></center></div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<table>
+	<tr>
+		<th>Instructor Name</th>
+		<th>Double check Instructor Name</th>
+		<th>How do you like teaching style</th>
+		<th>How to improve teaching</th>
+		<th>How do you like labs</th>
+		<th>How to improve labs</th>
+	</tr>
+{% for instructor in instructors %}
+	<tr>
+		<td>{{instructor['name']}}</td>
+		<form action="/feedbacksS">
+			<td><input type="input-box" name="instructor" type="text" value={{instructor['name']}}></td>
+			<td><input type="input-box" name="f1" type="text" placeholder=""></td>
+			<td><input type="input-box" name="f2" type="text" placeholder=""></td>
+			<td><input type="input-box" name="f3" type="text" placeholder=""></td>
+			<td><input type="input-box" name="f4" type="text" placeholder=""></td>
+			<td><input type="submit" name="Submit" value="submit"></td>
+			</form>
+	</tr>
+{% endfor %}
+{% endif %}
+</body>
+</html>

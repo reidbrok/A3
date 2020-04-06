@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\index.css"/>
+	<title>CSCB20 - Introduction to Database and Web Application
+	</title>
+</head>
+<body>
+    <div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+</div>
+
+	<div id="main">
+  		<button class="openbtn" onclick="openNav()">☰ Menu</button>
+		<div class = "title"><center><h1>CSCB20 - Introduction to Database and Web Application</h1></center></div>
+		<div class = "welcome"> Welcome {{name}}
+        	<a href="http://127.0.0.1:5000/logout">Logout</a>
+	</div>
+	</div>
+</div>
+
+<div class="body"> 
+	<h2>Course Description</h2>
+	<p>A practical introduction to databases and Web app development. Databases: terminology and applications; creating, querying and updating databases; the entity-relationship model for database design. Web documents and applications: static and interactive documents; Web servers and dynamic server-generated content; Web application development and interface with databases.</p>
+
+	<p><strong>Prerequisite:</strong> Some experience with programming in an imperative language such as Python, Java or C.
+    <p><strong>Exclusion:</strong>  This course may not be taken after - or concurrently with - any C- or D-level CSC course.
+ 
+    <p><strong>Syllabus:</strong> <a href="http://www.utsc.utoronto.ca/bretscher/b20/syllabus.pdf">PDF</a></p>
+
+    <h2>Instructor</h2> 
+
+	<div class="borderless">
+		<div class="Instructor">
+			<div class="information">Dr. Anna Bretscher</div>
+			<div class="information">Email: <a href="mailto:bretscher@utsc.utoronto.ca">bretscher@utsc.utoronto.ca</a></div>
+			<div class="information">Office: IC493 </div>
+			<div class="information">Phone: (416) 208-4745</div>
+			<div class="information">Lectures: Mondays 9:15-11:00 in HW 216</div>
+			<div class="information">Office Hours: W 11:00-12:00</div>
+		</div>
+	<img src="https://www.utsc.utoronto.ca/cms/sites/utsc.utoronto.ca.cms/files/styles/person-thumbnail/public/Anna_Bretscher.jpg?itok=fsOxaRe6" width="114" height="152" alt="Anna Bretscher">
+	</div>
+</div>
+	<div class="footage">
+		<div class="faculty">
+			<a href="https://www.utsc.utoronto.ca/cms/faculty">UTSC CS faculty</a>
+		</div>
+		<div class="author">
+			Design by: Yiming Zheng, Yushu Zou
+		</div>
+	</div>
+
+
+</body> 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</html>

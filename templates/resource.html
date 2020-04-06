@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\resource.css"/>
+	<title>CSCB20 - Introduction to Database and Web Application</title>
+</head>
+<body>
+    <div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <div class="title">
+        <center>
+        <h1>Resource
+        </center>
+    </div>
+    <div class = "welcome"> Welcome {{name}}
+          <a href="http://127.0.0.1:5000/logout">Logout</a>
+  </div>
+</div>
+
+<div class="body">
+  <h2> Online Resource</h2>
+    <ul>
+      <li>
+        <a href="http://127.0.0.1:5000/">
+          Course website</a><br><br>
+        
+        Course information, lecture notes, tutorial material, important
+        announcements, etc. will be posted on the course website. It is
+        your responsibility to visit it frequently.<br><br>
+      </li>
+	
+    <li>Beginner Tutorial for <a href="http://code.tutsplus.com/tutorials/sql-for-beginners--net-8200">MySQL</a>
+
+      </li><li>
+        Email communication<br><br>
+
+        Questions regarding the course material, assignments, midterm,
+        etc. should be posed on the bulletin board. Questions about
+        the assignment which you feel you cannot formulate without
+        revealing your solution (should be very rare!), as well as
+        questions and concerns regarding your personal matters should
+        be directed to the instructor.<br> <br>
+
+      </li>
+ <li>
+	   <a href="https://piazza.com">
+		 Discussion board</a><br><br>
+
+	   You are encouraged to use the bulletin board to discuss the
+	   course material, pose questions on the assignments, etc. The
+	   bulletin board will be monitored by the instructor and by your
+	   TAs. Please, be very careful not to reveal (parts of) your
+	   solution on the bulletin board.
+	 </li>
+
+   </ul>
+   <h2>Software and documents</h2>
+   <ul>
+      <li>Logging into Mathlab.<br>
+      <ol><li>     Mac OS comes with the application "terminal".  Simple click on it to run.  Login to mathlab by typing <br>
+      
+     <p><code>ssh utorid@mathlab.utsc.utoronto.ca</code>. Enter your password.<br></p>
+     
+      </li>
+      <br>
+      <li>Windows - you will need a SSH client.  PuTTY is a good free one.  You can download and install here: <a href="http://www.putty.org/">PuTTY</a>.
+      Use the same command as above to login to mathlab: <br>
+      
+      <p><code>ssh utorid@mathlab.utsc.utoronto.ca</code>.</p>
+      
+    </li></ol></li></ul>
+</div>
+
+<div class="footage">
+  <div class="faculty">
+    <a href="https://www.utsc.utoronto.ca/cms/faculty">UTSC CS faculty</a>
+  </div>
+  <div class="author">
+    Design by: Yiming Zheng, Yushu Zou
+  </div>
+</div>
+
+</body>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\lab.css"/>
+	<title> CSCB20 - Introduction to Database and Web Application </title>
+<body>
+    <div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+	<div class="title"><center><h1>Labs</h1></center>
+	</div>
+	<div class = "welcome"> Welcome {{name}}
+        	<a href="http://127.0.0.1:5000/logout">Logout</a>
+	</div>
+</div>
+</div>
+<div class = "body">
+<div class="informarion">
+	<h3>Tutorial Sections</h3>
+	<p>Please go the tutorial section that you signed up for on ROSI.</p>
+</div>
+<div class="informarion">
+	<h3>Tutorial Exercises</h3>
+	<p>This section contains the tutorial exercises.
+
+	Tutorials are held every week. The first tutorial week is week 
+	2. Please make use of this valuable resource!</p>
+</div>
+<div class="table">
+	<div class="row">
+		<div class="week">
+			Week
+		</div>
+		<div class="lab">
+			Lab
+		</div>
+		<div class="solution">
+			Solution
+		</div>
+	</div>	
+	<div class="row">
+		<div class="week">
+			2
+		</div>
+		<div class="lab">
+			<a href="/static/t1.html">Python, Command line</a>
+		</div>
+		<div class="solution">
+			None
+		</div>
+	</div>	
+	<div class="row">
+		<div class="week">
+			3
+		</div>
+		<div class="lab">
+			<a href="/static/w3hd.pdf">Handout</a>
+		</div>
+		<div class="solution">
+		</div>
+	</div>	
+	<div class="row">
+		<div class="week">
+			4
+		</div>
+		<div class="lab">
+			<a href="/static/w4hd.html">Handout</a>
+			<br>
+			<a href="/static/w4sql.sql">university.sql</a>
+		</div>
+		<div class="solution">
+			<a href="/static/w4sol.html">query_solns</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="week">
+			5
+		</div>
+		<div class="lab">
+			<a href="/static/w5hd.pdf">Handout</a>
+		</div>
+		<div class="solution">
+			<a href="/static/w5sol.pdf">Solns</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="week">
+			6
+		</div>
+		<div class="lab">
+			<a href="/static/w6hd.pdf">Handout</a>
+		</div>
+		<div class="solution">
+			<a href="/static/w6sol.pdf">Solns</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="week">
+			7
+		</div>
+		<div class="lab">
+			<a href="/static/w7hd.pdf">Handout</a>
+		</div>
+		<div class="solution">
+		</div>
+	</div>
+	<div class="row">
+		<div class="week">
+			8
+		</div>
+		<div class="lab">
+			<a href="/static/w8hd.html">Handout</a>
+		</div>
+		<div class="solution">
+		</div>
+	</div>
+	<div class="row">
+		<div class="week">
+			9
+		</div>
+		<div class="lab">
+			<a href="https://www.w3schools.com/jquery/jquery_syntax.asp">W3 tutorial</a>
+			 Work through the tutorial for jQuery 
+           	up until jQuery Remove.
+		</div>
+		<div class="solution">
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="footage">
+	<div class="faculty">
+		<a href="https://www.utsc.utoronto.ca/cms/faculty">UTSC CS faculty</a>
+	</div>
+	<div class="author">
+		Design by: Yiming Zheng, Yushu Zou
+	</div>
+</div>
+
+
+</body>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</html>

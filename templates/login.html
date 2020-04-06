@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="\static\login.css">
+  <title>CSCB20</title>
+</head>
+<body>
+  <div class = "login-page">
+    <div class = "form">
+      <form class = "register-form" action="/register" >
+        <input type = "text" name="name" placeholder="Username"/>
+        <input type = "password" name="password" placeholder="Password"/>
+        <input type="radio" id="instructor" name="position" value="instructor">
+        <label for="instructor">instructor</label><br>
+        <input type="radio" id="student" name="position" value="student">
+        <label for="student">student</label>
+        <input type="submit" value="Register">
+          <p class = "message"> Already Registered? <a class="change" href = "#"> Login</a>
+          </p>
+        </form>
+
+        <form class = "Login-form" action="/login" method="POST">
+          <input type = "text" name="name" placeholder="Username"/>
+          <input type = "password" name="password" placeholder="Password"/>
+        <input type="submit" value="Login">
+        <p class = "message"> Not Registered? <a class="change" herf = "#"> Register</a>
+        </p>
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script> 
+      $(".message a").click(function (){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      }); 
+    </script>
+ </body>
+</html>

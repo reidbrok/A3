@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="\static\assignments.css"/>
+	<title>CSCB20 - Introduction to Database and Web Application</title>
+</head>
+<body>
+    <div class = "header_container">
+    <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="http://127.0.0.1:5000/">Home</a>
+      <a href="http://127.0.0.1:5000/assignments">Assignment</a>
+      <a href="https://calendar.google.com/calendar?cid=MDdqczk4OW1hcXBiOWxlMHVzc2djdTZxcThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+      <a href="http://127.0.0.1:5000/lab">Lab</a>
+      <a href="http://127.0.0.1:5000/lectures">Lectures</a>
+      <a href="http://127.0.0.1:5000/test">Test</a>
+      <a href="http://127.0.0.1:5000/resource">Resource</a>
+      <a href="http://127.0.0.1:5000/news">News</a>
+      <a href="http://127.0.0.1:5000/mark">Mark</a>
+      <a href="http://127.0.0.1:5000/feedback">Feedback</a>
+      <a href="https://piazza.com/">Discuss Board</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>
+  	<div class ="title"><center><h1>Assignments</h1></center></div>
+  	<div class = "welcome"> Welcome {{name}}
+        	<a href="http://127.0.0.1:5000/logout">Logout</a>
+	</div>
+		</div>
+</div>
+
+
+<div class="body">
+
+
+	<center>
+	      <h2>Overview</h2>
+
+	      <p>
+	        Here are the assignment and exercise topics, weights, and due 
+	dates.  I will be posting the exercise and assignment handouts here.  All exercises and
+	assignments  will be submitted on <a href="https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</a>.
+	      </p>
+	</center>
+	<h2>Assignments</h2>
+	<div class="table">
+		<div class="row">
+			<div class="number">
+			</div>
+			<div class="Exercise">
+				Exercise
+			</div>
+			<div class="Topic">
+				Topic
+			</div>
+			<div class="Weight">
+				Weight
+			</div>
+			<div class="DueDate">
+				Due Date
+			</div>
+			<div class="Solution">
+				Solution
+			</div>
+		</div>
+		<div class="row">
+			<div class="number">
+				1
+			</div>
+			<div class="Exercise">
+				<a href="static/a1.html">Handout</a>
+			</div>
+			<div class="Topic">
+				Relational Algebra and MySQL
+			</div>
+			<div class="Weight">
+				15%
+			</div>
+			<div class="DueDate">
+				Part 1. Wednesday Feb. 1, 11.59pm, Submit to <a href="https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</a><br/>
+            <font color='red'>UPDATED</font> 
+            Part 2 and 3. For 5% bonus Saturday Feb. 11, 11.59pm or Friday Feb. 17, 11.59 Submit to <a href="https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</a> You can download a dumpfile for IMDB_SMALL  <a href="static/IMDB_SMALL.sql">here</a>.<br> To use it type <code>mysql -u utorid -p < IMDB_SMALL.sql</code>
+			</div>
+			<div class="Solution">
+				<a href="static/soln.pdf">Solution Part 1</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="number">
+				2
+			</div>
+			<div class="Exercise">
+				<a href="http://mathlab.utsc.utoronto.ca/courses/cscb20w17/bretsche/assignments/a2/a2.html">Handout</a>
+				<br>
+				 <a href="http://www.utsc.utoronto.ca/bretscher/b20/assignments/a2/a2.zip">a2.zip</a>
+			</div>
+			<div class="Topic">
+				HTML, CSS, PHP
+			</div>
+			<div class="Weight">
+				15%
+			</div>
+			<div class="DueDate">
+				Part 1: Worth 50% Friday March. 10, 11.59pm, Submit to <a href="https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</a><br>
+        		Part 2: Worth 50% Friday March. 19, 11.59pm, Submit to <a href="https://markus.utsc.utoronto.ca/cscb20w20">MarkUs</a>
+			</div>
+			<div class="Solution">
+			</div>
+		</div>
+		<div class="row">
+			<div class="number">
+				3
+			</div>
+			<div class="Exercise">
+				<a  href="http://www.utsc.utoronto.ca/bretscher/b20/assignments/a3/a3_marking_scheme.txt">Marking Scheme for A3 </a> 
+				<br>
+				<a  href="http://www.utsc.utoronto.ca/bretscher/b20/assignments/a3/a3.html">Handout</a>
+			</div>
+			<div class="Topic">
+				Web Application and Database
+			</div>
+			<div class="Weight">
+				15%
+			</div>
+			<div class="DueDate">
+				Friday March 31, 11.59pm
+			</div>
+			<div class="Solution">
+			</div>
+		</div>
+	</div>
+	<div>
+		<h2>FAQ - Assignment 1</h2>
+		<div class="QA">
+			Q.If the mysql portion asks for a director or actor without specifying which attributes, what should I return?
+		</div>
+		<div class="QA">
+			A. Return the first name, last name. 
+		</div>
+	</div>
+</div>
+
+	<div class="footage">
+		<div class="faculty">
+			<a href="https://www.utsc.utoronto.ca/cms/faculty">UTSC CS faculty</a>
+		</div>
+		<div class="author">
+			Design by: Yiming Zheng, Yushu Zou
+		</div>
+	</div>
+
+
+
+</body>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</html>
